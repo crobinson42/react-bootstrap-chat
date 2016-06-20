@@ -2,7 +2,7 @@
   "name": "react-bootstrap-chat",
   "version": "0.0.1",
   "description": "A React component & complete chat UI for consumption in a front-end app.",
-  "main": "index.js",
+  "main": "build/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --progress",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
@@ -13,37 +13,42 @@
     "url": "git+https://github.com/crobinson42/react-bootstrap-chat.git"
   },
   "keywords": [
+    "react-component",
+    "chat",
     "react-bootstrap-chat",
     "react-chat",
     "bootstrap-chat",
-    "javascript",
     "chat-ui",
     "chat-api"
   ],
-  "author": "Cory Robinson <coryrobinson42@gmail.com> (http://ygithub.com/robinson42)",
+  "author": "Cory Robinson <coryrobinson42@gmail.com> (http://github.com/crobinson42)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/crobinson42/react-bootstrap-chat/issues"
   },
   "devDependencies": {
+    "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-transform": "^2.0.2",
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.1",
-    "css-loader": "^0.23.1",
     "html-webpack-plugin": "^2.21.0",
+    "jquery": "^3.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "react-transform-hmr": "^1.0.4",
-    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
   "homepage": "https://github.com/crobinson42/react-bootstrap-chat#readme",
-  "dependencies": {
-    "bootstrap": "^3.3.6",
+  "peerDependencies": {
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
+  },
+  "dependencies": {
   }
 }
